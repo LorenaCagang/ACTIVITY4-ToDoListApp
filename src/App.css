@@ -45,7 +45,7 @@ body {
   padding: 10px;
   border-radius: 8px 8px 0 0;
 }
-.done .taskText {
+.done .input-task{
   text-decoration: line-through;
   opacity: 0.6;
 }
@@ -147,6 +147,7 @@ body {
   border-radius: 3rem;
   border: none;
   box-shadow: 0 0 0.5rem rgb(58, 35, 14);
+  margin-left: 1rem;
 }
 .row .col-auto button:hover {
   color: black;
