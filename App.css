@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Dancing+Script:wght@700&family=Domine&family=Homemade+Apple&family=IBM+Plex+Sans+Arabic:wght@300&family=Kaushan+Script&family=Mitr&family=Prosto+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@100;300&display=swap');
+
+body {
+  background-image: url('images/BG.jpg');
+  background-size: cover;
+  background-position: center;
+  color: #4d4d4d; 
+  font-family: 'Inter Tight', sans-serif;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.App {
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(255, 223, 186, 0.9);
+  box-shadow: 0 0 20px rgb(14, 14, 15);
+  min-height: 50vh; 
+  min-width: 80vw;
+  display: flex;
+  flex-direction: column; 
+}
+
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.header {
+  background-color: #666; 
+  padding: 10px;
+  border-radius: 8px 8px 0 0;
+}
+.done .taskText {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+.card {
+  margin: 20px;
+  padding: 20px;
+  background-color: #666; 
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.task-container {
+  background-color: rgba(201, 104, 60, 0.5);
+  border-radius: 3rem;
+  margin: 1rem 2rem 1rem 2rem;
+  padding: 15px;
+  text-align: left;
+  font-size: 20px;
+  position: relative;
+  display: inline-block;
+}
+
+.task-container div {
+  display: flex;
+  align-items: center;
+}
+
+.task-container .icons {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 15px;
+  display: flex;
+}
+
+.task-container .icons span {
+  margin: 0px 10px;
+  cursor: pointer;
+  color: #bc6c25; 
+  font-size: 1.3rem;
+}
+
+.task-container .icons span:focus-visible {
+  outline: none;
+}
+
+.task-container .icons span:hover {
+  color: #3b2914; 
+}
+
+.task-num {
+  color: black;
+  background-color: #81400eab; 
+  border-radius: 50%;
+  border: none;
+  border-color: #b07d62;
+  border-width: 0.2rem;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  margin-right: 2rem;
+}
+
+.input-task {
+  flex: 1;
+  color: #141212; 
+  overflow: hidden; 
+  word-wrap: break-word; 
+  margin-right: 9vw;
+}
+.headerTitle {
+  font-family: 'Kaushan Script', cursive;
+  font-size: 3rem;
+  margin-bottom: 0;
+  color: #332c2c;
+}
+.row{
+  margin:0 2rem;
+}
+.row .col input{
+  background-color: #ffedd8;
+  border: solid;
+  border-width: 0.1rem;
+  border-color: #332c2c;
+  border-radius: 0;
+  box-shadow: 0 0 0.2rem #d69f7e;
+}
+.row .col input:hover,
+.row .col input:focus {
+  
+  box-shadow:  0 0 0.2rem #bc6b25, 0 0 0.2rem #bc6b25, 0 0 0.2rem #bc6b25;
+}
+.row .col-auto button{
+  background-color: #81400eab;
+  border-radius: 3rem;
+  border: none;
+  box-shadow: 0 0 0.5rem rgb(58, 35, 14);
+}
+.row .col-auto button:hover {
+  color: black;
+  background-color:#bc6b25 ;
+  box-shadow: 0 0 0.2rem #bc6b25, 0 0 0.2rem #bc6b25, 0 0 0.2rem #bc6b25;
+}
+.row .col-auto button.btn-update {
+  background-color: #81400eab;
+  border-radius: 3rem;
+  border: none;
+  box-shadow: 0 0 0.5rem rgb(58, 35, 14);
+}
+
+.row .col-auto button.btn-update:hover {
+  color: black;
+  background-color: #bc6b25;
+  box-shadow: 0 0 0.2rem #bc6b25, 0 0 0.2rem #bc6b25, 0 0 0.2rem #bc6b25;
+}
+
+.row .col-auto button.btn-cancel {
+  background-color: #8f755e;
+  border-radius: 3rem;
+  border: none;
+  box-shadow: 0 0 0.5rem rgb(58, 35, 14);
+}
+
+.row .col-auto button.btn-cancel:hover {
+  background-color: #3b2914;
+  color: white;
+}
